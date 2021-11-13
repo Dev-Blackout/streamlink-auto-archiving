@@ -1,8 +1,8 @@
 # streamlink-auto-archiving-batch
-### 스트림링크 자동 아카이브.bat
+## 스트림링크 자동 아카이브.bat
 
-Streamlink
-https://streamlink.github.io/
+### Required
+Streamlink https://streamlink.github.io/
 
 ```batch
 @echo off
