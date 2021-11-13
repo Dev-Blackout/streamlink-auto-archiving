@@ -1,6 +1,9 @@
 # streamlink-auto-archiving-batch
 ### 스트림링크 자동 아카이브.bat
 
+Streamlink
+https://streamlink.github.io/
+
 ```batch
 @echo off
 cd C:\Users\Administrator\Desktop\Archive\Streams
@@ -26,5 +29,5 @@ echo =========================
 goto Down
 ```
 
-youtube.com의 경우, Link가 일회용이라 자동이라고 보기 어려움.
+youtube.com의 경우, Link가 일회용이라 자동이라고 보기 어려움.  
 주요 사용처 : twitch, twitcasting + @ ?
