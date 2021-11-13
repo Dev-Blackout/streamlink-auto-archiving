@@ -1,0 +1,1 @@
+# streamlink-auto-archiving-batch
