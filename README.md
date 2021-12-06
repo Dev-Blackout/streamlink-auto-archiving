@@ -21,13 +21,10 @@ title %date%-%Streamer%
 goto Down
 
 :Down
-streamlink --http-cookie "auth-token={tiwtch.tv 토큰}; __Secure-3PSID={youtube.com 토큰}" "%Link%" best -o "%date%-%Streamer%-%time::=-%.mp4" --retry-streams 1 --twitch-disable-hosting --twitch-disable-ads --hls-segment-threads 5
-rem twitch.tv / youtube.com -> F12 -> Application -> Cookies -> auth-token / __Secure-3PSID 토큰의 값 입력.
+streamlink --http-cookie "auth-token={tiwtch.tv 토큰}; __Secure-3PSID={youtube.com 토큰}" "%Link%" best -o "%date%-%Streamer%-%time::=-%.mp4" --retry-streams 30 --twitch-disable-hosting --twitch-disable-ads --hls-segment-threads 5
+rem twitch.tv / youtube.com -> F12 -> Application -> Cookies -> auth-token(twitch.tv) / __Secure-3PSID(youtube.com) 토큰의 값 입력.
 echo =========================
 echo Finish %date%-%Streamer%-%time::=-%
 echo =========================
 goto Down
 ```
-
-youtube.com의 경우, Link가 일회용이라 자동이라고 보기 어려움.  
-주요 사용처 : twitch, twitcasting + @ ?
