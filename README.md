@@ -15,7 +15,7 @@ set Streamer=
 set /p Link=Link : 
 rem 방송 주소 입력
 set /p Streamer=Streamer : 
-rem 파일 이름 입력 // 날자 - Streamer - 시간
+rem 파일 이름 입력 // yyyy-mm-dd-Streamer-hh-mm-ss.mp4
 title %date%-%Streamer%
 goto Down
 
