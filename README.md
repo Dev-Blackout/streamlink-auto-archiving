@@ -27,3 +27,15 @@ echo Finish %date%-%Streamer%-%time::=-%
 echo =========================
 goto Down
 ```
+```sh
+#!/bin/bash
+
+while true; do
+  LINK="https://twitch.tv/vrecord_choki"
+  FNAME="CHOKI_cas_$(date +"%Y%m%d_%H%M%S").mp4"
+  streamlink --http-cookie "auth-token={tiwtch.tv 토큰}; __Secure-3PSID={youtube.com 토큰}" "$LINK" best -o "$FNAME" --retry-streams 10 --twitch-disable-hosting --twitch-disable-ads --hls-segment-threads 5
+  FNAME="CHOKI_twitch_$(date +"%Y%m%d_%H%M%S").mp4"
+done
+```
+
+대충써~ 
